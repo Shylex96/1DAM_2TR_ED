@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class PreguntasRespuestas2 {
 
 	private static final String EN_QUE_CURSO_ESTAS = "¿En qué curso estás?";
-	private static final String CUANTOS_ANOS_TIENES = "¿Cuántos años tienes?"; // Refactorizamos como Constante las
+	private static final String CUANTOS_ANOS_TIENES = "¿Cuántos aÃ±os tienes?"; // Refactorizamos como Constante las
 	// preguntas.
 	private static final String COMO_TE_LLAMAS = "¿Cómo te llamas?";
 
@@ -14,7 +14,7 @@ public class PreguntasRespuestas2 {
 		Scanner teclado = new Scanner(System.in);
 
 		preguntar(COMO_TE_LLAMAS);// Seleccionamos el syso entero, refactor extraer metodo
-		String nombre = responder(teclado); // Extraemos como m�todo los next LINE. Para que quede m�s bonito.
+		String nombre = responder(teclado); // Extraemos como método los next LINE. Para que quede más bonito.
 
 		preguntar(CUANTOS_ANOS_TIENES);
 		String edad = responder(teclado);
@@ -39,7 +39,7 @@ public class PreguntasRespuestas2 {
 	}
 
 	public static void mensaje(String nombre, String edad, String curso) {
-		System.out.println("Te llamas " + nombre + ", tienes " + edad + " años y estás en " + curso);
+		System.out.println("Te llamas " + nombre + ", tienes " + edad + " aÃ±os y estÃ¡s en " + curso);
 	}
 
 }
