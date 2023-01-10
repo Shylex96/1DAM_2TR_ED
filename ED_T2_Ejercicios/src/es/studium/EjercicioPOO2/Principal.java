@@ -12,54 +12,64 @@ public class Principal {
 		Director director2 = new Director("Quentin Tarantino", LocalDate.of(1963, 3, 27), "Estadounidense");
 		Pelicula pelicula2 = new Pelicula("Pulp Fiction", 1994, 154, director2);
 
-		Director director3 = new Director("Christopher Nolan", LocalDate.of(1970, 7, 30), "Brit醤ico");
+		Director director3 = new Director("Christopher Nolan", LocalDate.of(1970, 7, 30), "Brit谩nico");
 		Pelicula pelicula3 = new Pelicula("The Dark Knight", 2008, 152, director3);
 
 		Director director4 = new Director("Martin Scorsese", LocalDate.of(1942, 11, 17), "Estadounidense");
 		Pelicula pelicula4 = new Pelicula("The Departed", 2006, 151, director4);
 
-		Director director5 = new Director("Alfonso Cuar髇", LocalDate.of(1961, 11, 28), "Mexicano");
+		Director director5 = new Director("Alfonso Cuar贸n", LocalDate.of(1961, 11, 28), "Mexicano");
 		Pelicula pelicula5 = new Pelicula("Gravity", 2013, 91, director5);
 
-		// Imprimir informaci髇 de las peliculas
+		// Imprimir informaci贸n de las peliculas
 		System.out.println("Pelicula 1:");
 		System.out.println("Titulo: " + pelicula1.getTitulo());
-		System.out.println("A駉: " + pelicula1.getAno());
-		System.out.println("Duraci髇: " + pelicula1.getDuracion() + " minutos");
+		System.out.println("A帽o: " + pelicula1.getAno());
+		System.out.println("Duraci贸n: " + pelicula1.getDuracion() + " minutos");
 		System.out.println("Director: " + pelicula1.getDirector().getNombre() + ", Nacionalidad: "
 				+ pelicula1.getDirector().getNacionalidad());
 		System.out.println();
 
 		System.out.println("Pelicula 2:");
 		System.out.println("Titulo: " + pelicula2.getTitulo());
-		System.out.println("A駉: " + pelicula2.getAno());
-		System.out.println("Duraci髇: " + pelicula2.getDuracion() + " minutos");
+		System.out.println("A帽o: " + pelicula2.getAno());
+		System.out.println("Duraci贸n: " + pelicula2.getDuracion() + " minutos");
 		System.out.println("Director: " + pelicula2.getDirector().getNombre() + ", Nacionalidad: "
 				+ pelicula2.getDirector().getNacionalidad());
 		System.out.println();
 
 		System.out.println("Pelicula 3:");
 		System.out.println("Titulo: " + pelicula3.getTitulo());
-		System.out.println("A駉: " + pelicula3.getAno());
-		System.out.println("Duraci髇: " + pelicula3.getDuracion() + " minutos");
+		System.out.println("A帽o: " + pelicula3.getAno());
+		System.out.println("Duraci贸n: " + pelicula3.getDuracion() + " minutos");
 		System.out.println("Director: " + pelicula3.getDirector().getNombre() + ", Nacionalidad: "
 				+ pelicula3.getDirector().getNacionalidad());
 		System.out.println();
 
 		System.out.println("Pelicula 4:");
 		System.out.println("Titulo: " + pelicula4.getTitulo());
-		System.out.println("A駉: " + pelicula4.getAno());
-		System.out.println("Duraci髇: " + pelicula4.getDuracion() + " minutos");
+		System.out.println("A帽o: " + pelicula4.getAno());
+		System.out.println("Duraci贸n: " + pelicula4.getDuracion() + " minutos");
 		System.out.println("Director: " + pelicula4.getDirector().getNombre() + ", Nacionalidad: "
 				+ pelicula4.getDirector().getNacionalidad());
 		System.out.println();
 
 		System.out.println("Pelicula 5:");
 		System.out.println("Titulo: " + pelicula5.getTitulo());
-		System.out.println("A駉: " + pelicula5.getAno());
-		System.out.println("Duraci髇: " + pelicula5.getDuracion() + " minutos");
+		System.out.println("A帽o: " + pelicula5.getAno());
+		System.out.println("Duraci贸n: " + pelicula5.getDuracion() + " minutos");
 		System.out.println("Director: " + pelicula5.getDirector().getNombre() + ", Nacionalidad: "
 				+ pelicula5.getDirector().getNacionalidad());
 	}
+	
+	
+	// Si queremos cambiar el orden en el que sale la fecha:
+	
+	// Damos formato a la fecha e indicamos el formato que le queremos dar a la fecha:
+	// DateTimeFormatter damosFormato1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	// Parseamos la fecha que queramos al formato indicado antes:
+	// LocalDate formatoFechaNacimiento1 = LocalDate.parse("25/09/1949", damosFormato1);
+	// Damos el formato deseado a la fecha y la mostramos por consola para comprobarlo:
+	// System.out.println(formatoFechaNacimiento1.format(damosFormato1));
 
 }
