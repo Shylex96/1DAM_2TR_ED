@@ -13,7 +13,7 @@ public class Principal {
 
 		CentroDeTrabajo centroDeTrabajo3 = new CentroDeTrabajo("Meléndez", "C/ Rust º13");
 		Departamento departamento3 = new Departamento("Gráfico", centroDeTrabajo3);
-		Empleado empleado3 = new Empleado("Esteban", "Gómbez Baena", departamento3);
+		Empleado empleado3 = new Empleado("Esteban", "Gómbez Baena", departamento3); 
 
 		CentroDeTrabajo centroDeTrabajo4 = new CentroDeTrabajo("Norte", "C/ Rust º13");
 		Departamento departamento4 = new Departamento("Animación", centroDeTrabajo4);
