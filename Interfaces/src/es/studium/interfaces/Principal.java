@@ -1,7 +1,12 @@
 package es.studium.interfaces;
 
-public class Principal {
+/**
+ * @author Studi Estebáñ
+ */
 
+
+public class Principal {
+	
 	public static void main(String[] args) {
 		Acumulador acumulador1 = new Acumulador(10);
 		acumulador1.incremento(15);
